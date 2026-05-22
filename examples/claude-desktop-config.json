@@ -1,0 +1,38 @@
+{
+  "_comment_top": "Drop the 'mcpServers' block into your Claude Desktop config (Settings -> Developer -> Edit Config). Either of the two variants below works. Restart Claude Desktop after editing.",
+
+  "_comment_paths": {
+    "macos":   "~/Library/Application Support/Claude/claude_desktop_config.json",
+    "windows": "%AppData%/Claude/claude_desktop_config.json",
+    "windows_msix_warning": "On MSIX-packaged Claude Desktop, the UI config editor can corrupt JSON. Edit the file with notepad++ / VS Code instead."
+  },
+
+  "mcpServers": {
+
+    "_variant_a_http_recommended": {
+      "_description": "HTTP transport — no local process, always-up-to-date. Recommended for most users.",
+      "url": "https://tradingstrategies.work/api/mcp",
+      "headers": {
+        "Authorization": "Bearer sk-arena-REPLACE-ME-get-from-dashboard"
+      }
+    },
+
+    "_variant_b_stdio_local": {
+      "_description": "Local stdio transport — useful when behind corp proxy or for offline-cached dev.",
+      "_prerequisites": "git clone https://github.com/Schoasch/btc-dashboard.git && cd btc-dashboard && npm i",
+      "command": "npx",
+      "args": [
+        "tsx",
+        "/ABSOLUTE/PATH/TO/btc-dashboard/scripts/mcp-stdio.ts"
+      ],
+      "env": {
+        "ARENA_API_KEY": "sk-arena-REPLACE-ME-get-from-dashboard"
+      }
+    }
+
+  },
+
+  "_get_api_key": "https://tradingstrategies.work/dashboard/account/api-keys (Free tier available, no credit card)",
+  "_tools": "44 tools across snapshots, history, on-chain series, strategy/universe catalog, insights, backtests (read + trigger), live-subscriptions, reports",
+  "_pricing": "Free: 30 req/h, 200/d. API Pro EUR 9,99/mo: 300 req/h, 3k/d. API Power EUR 29,99/mo: 2000 req/h, 30k/d. One subscription covers REST + MCP."
+}
