@@ -1,0 +1,42 @@
+# Smithery deployment manifest for the Backtesting Arena MCP server.
+#
+# Docs:
+#   - https://smithery.ai/docs/build/external
+#   - https://smithery.ai/docs/build/session-config
+#
+# Behavior:
+#   - The MCP server lives at https://tradingstrategies.work/api/mcp (HTTPS
+#     streamable, remote URL — Smithery acts as a proxy/setup-prompter).
+#   - On connect, Smithery prompts the user for `apiKey` (free at
+#     https://tradingstrategies.work/dashboard/account/api-keys, format
+#     sk-arena-...).
+#   - Smithery accepts the value as the `x-arena-key` request header (the
+#     literal `Authorization` header name is reserved by Smithery itself)
+#     and transforms it into `Authorization: Bearer {value}` upstream — that
+#     is what our /api/mcp endpoint validates.
+#   - No OAuth: Bearer-only. Our /.well-known/oauth-protected-resource/api/mcp
+#     stub signals `authorization_servers: []` so OAuth-probing clients stop
+#     looping; the actual auth handshake happens through this configSchema.
+
+startCommand:
+  type: external
+  url: https://tradingstrategies.work/api/mcp
+
+configSchema:
+  type: object
+  required:
+    - apiKey
+  properties:
+    apiKey:
+      type: string
+      title: Arena API Key
+      description: |
+        Get a free key at https://tradingstrategies.work/dashboard/account/api-keys
+        (format: sk-arena-...). One Bearer key works across REST + MCP +
+        live-subscriptions. Free tier = 30 calls/h, no charge.
+      format: password
+      x-from:
+        header: x-arena-key
+      x-to:
+        header: Authorization
+        format: "Bearer {value}"
