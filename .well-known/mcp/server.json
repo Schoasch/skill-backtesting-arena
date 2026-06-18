@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "io.github.schoasch/skill-backtesting-arena",
+  "description": "Programmatic crypto market-cycle scoring, on-chain indicators, and aggregated strategy insights. ~60 MCP tools across daily snapshots (Arena Pulse, BTC Cycle, Fear & Greed, Mayer Multiple, Hash Ribbons, Funding Rate, Bullmarket Ampel, Altcoin Season), historical series, on-chain BRK data, strategy/filter/volatility insights, backtest triggers (Pro+), and live subscriptions. Same Bearer key works for REST + MCP.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/Schoasch/skill-backtesting-arena",
+    "source": "github"
+  },
+  "websiteUrl": "https://tradingstrategies.work/api",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://tradingstrategies.work/api/mcp"
+    }
+  ]
+}
