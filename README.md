@@ -74,7 +74,7 @@ Full example incl. stdio variant + Cursor config: [`examples/claude-desktop-conf
 |---|---|
 | [`examples/curl-snippets.sh`](./examples/curl-snippets.sh) | Bash snippets for public + Bearer endpoints |
 | [`examples/python-x402-client.py`](./examples/python-x402-client.py) | Python EIP-3009 signing + retry for x402 endpoints |
-| [`examples/typescript-mcp-client.ts`](./examples/typescript-mcp-client.ts) | Connect to MCP server, list 44 tools, call one |
+| [`examples/typescript-mcp-client.ts`](./examples/typescript-mcp-client.ts) | Connect to MCP server, list 69 tools, call one |
 | [`examples/claude-desktop-config.json`](./examples/claude-desktop-config.json) | Drop-in config for Claude Desktop / Cursor |
 
 ## Discovery files (machine-readable)
