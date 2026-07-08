@@ -1,5 +1,8 @@
 # Backtesting Arena — Agent Skill
 
+**Battle-tested market intelligence for AI agents — every claim backtested,
+versioned, and explainable. Evidence and base rates, never financial advice.**
+
 Skill package for AI agents and LLMs that need programmatic access to the
 **[Backtesting Arena](https://tradingstrategies.work)** API: daily Bitcoin /
 crypto cycle scoring, on-chain indicators, aggregated strategy insights, and

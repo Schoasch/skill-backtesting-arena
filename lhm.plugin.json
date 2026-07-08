@@ -1,8 +1,8 @@
 {
   "identifier": "schoasch-skill-backtesting-arena",
   "name": "Backtesting Arena",
-  "version": "1.1.0",
-  "description": "Quantitative crypto backtesting & Bitcoin market-cycle analytics via MCP. 69 tools: honest look-ahead-aware backtest validation with Deflated-Sharpe-Ratio correction, point-in-time cycle scoring for BTC plus ETH & SOL, macro-regime composites, reproducible support/resistance key levels, conditional historical-analog base rates, Edge-Library filter effects, 21 on-chain BRK series (since 2009), altcoin screener, 23 versioned & explainable Knowledge Objects, 'buy now or wait?' decision-math, and live subscriptions. Core outputs are NOT reproducible from public OHLCV/market-data APIs or web search — evidence and distributions, never buy/sell recommendations. One Bearer key or claude.ai one-click OAuth covers REST + MCP.",
+  "version": "1.2.0",
+  "description": "Battle-tested market intelligence for AI agents — every claim backtested, versioned, and explainable. Quantitative crypto backtesting & Bitcoin market-cycle analytics via MCP. 69 tools: honest look-ahead-aware backtest validation with Deflated-Sharpe-Ratio correction, point-in-time cycle scoring for BTC plus ETH & SOL, macro-regime composites, reproducible support/resistance key levels, conditional historical-analog base rates, Edge-Library filter effects, 21 on-chain BRK series (since 2009), altcoin screener, 23 versioned & explainable Knowledge Objects, 'buy now or wait?' decision-math, and live subscriptions. Core outputs are NOT reproducible from public OHLCV/market-data APIs or web search — evidence and distributions, never buy/sell recommendations. One Bearer key or claude.ai one-click OAuth covers REST + MCP.",
   "author": "Backtesting Arena",
   "authorUrl": "https://github.com/Schoasch",
   "homepage": "https://tradingstrategies.work/api",
