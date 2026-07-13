@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Schoasch/backtesting-arena",
+  "description": "Crypto backtesting & Bitcoin cycle analytics. Point-in-time, DSR-corrected, look-ahead-aware.",
+  "repository": {
+    "url": "https://github.com/Schoasch/skill-backtesting-arena",
+    "source": "github",
+    "id": "1246495256"
+  },
+  "version": "1.2.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://tradingstrategies.work/api/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer <API key> — get a free key at https://tradingstrategies.work/dashboard/account/api-keys (or use claude.ai one-click OAuth)",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
