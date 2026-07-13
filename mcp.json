@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "backtesting-arena": {
+      "url": "https://tradingstrategies.work/api/mcp"
+    }
+  }
+}
