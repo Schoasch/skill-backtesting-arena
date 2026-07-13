@@ -16,7 +16,7 @@ on-demand backtests.
 | **REST + MCP** | Bearer API key (Free tier available) | full surface, higher quotas |
 | **x402 pay-per-call** | EIP-3009 wallet signature (USDC on Base) | autonomous agents, no account |
 
-The full capability descriptor an agent should load is [`skill.md`](./skill.md).
+The full capability descriptor an agent should load is [`SKILL.md`](./skills/backtesting-arena/SKILL.md).
 
 ---
 
@@ -27,7 +27,7 @@ The full capability descriptor an agent should load is [`skill.md`](./skill.md).
 git clone https://github.com/Schoasch/skill-backtesting-arena.git
 ```
 
-Reference `skill.md` as a context document in your agent runtime, or use the
+Reference `skills/backtesting-arena/SKILL.md` as a context document in your agent runtime, or use the
 MCP server directly (see below).
 
 ## Quick start
