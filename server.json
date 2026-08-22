@@ -1,13 +1,15 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.Schoasch/backtesting-arena",
+  "title": "Backtesting Arena",
   "description": "Crypto backtesting & Bitcoin cycle analytics. Point-in-time, DSR-corrected, look-ahead-aware.",
+  "websiteUrl": "https://tradingstrategies.work/api",
   "repository": {
     "url": "https://github.com/Schoasch/skill-backtesting-arena",
     "source": "github",
     "id": "1246495256"
   },
-  "version": "1.2.0",
+  "version": "1.9.0",
   "remotes": [
     {
       "type": "streamable-http",
@@ -21,5 +23,18 @@
         }
       ]
     }
-  ]
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "docs_url": "https://tradingstrategies.work/api-docs",
+      "openapi_url": "https://tradingstrategies.work/openapi.json",
+      "llms_txt_url": "https://tradingstrategies.work/llms.txt",
+      "api_manifest_url": "https://tradingstrategies.work/.well-known/api.json",
+      "x402_manifest_url": "https://tradingstrategies.work/.well-known/x402",
+      "tool_count": 82,
+      "free_tier_available": true,
+      "categories": ["analytics", "research", "finance", "cryptocurrency", "trading"],
+      "summary": "82 MCP tools for quantitative crypto backtesting and Bitcoin market-regime analytics: look-ahead-aware backtest validation with Deflated-Sharpe-Ratio correction, point-in-time 9-indicator Bitcoin cycle scoring, macro-regime composites, Edge-Library filter effects, 54 on-chain series since 2009, altcoin screener and live subscriptions. Core outputs are not reproducible from public OHLCV/market-data APIs or web search. Delivers evidence, distributions and base rates — never buy/sell recommendations."
+    }
+  }
 }
