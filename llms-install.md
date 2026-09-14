@@ -72,7 +72,7 @@ Save the file and restart / reload the MCP client so it picks up the new server.
 
 After the client reconnects, confirm the server is live:
 
-1. **List tools** — the server should expose **87 tools** (names prefixed
+1. **List tools** — the server should expose **89 tools** (names prefixed
    `arena_…`, plus `validate_strategy`). Discovery (`initialize` / `tools/list`)
    works even unauthenticated, so the catalog appears immediately.
 2. **Call a free tool** — e.g. `arena_get_pulse` (the Arena Pulse market
@@ -86,8 +86,8 @@ If tools list but calls return `401`, re-check the `Authorization` header value.
 
 ## What you get
 
-- **87 MCP tools**: point-in-time Bitcoin cycle scoring (plus per-coin cycle for
-  ETH & SOL), macro-regime composites, Edge-Library filter effects, 54 on-chain
+- **89 MCP tools**: point-in-time Bitcoin cycle scoring (plus per-coin cycle for
+  ETH & SOL), macro-regime composites, Edge-Library filter effects, 62 on-chain
   series (since 2009), altcoin screener, sentiment, "buy now or wait?"
   decision-math, conditional historical-analog base rates, on-demand backtests,
   and live subscriptions.
