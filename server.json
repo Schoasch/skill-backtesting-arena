@@ -9,7 +9,7 @@
     "source": "github",
     "id": "1246495256"
   },
-  "version": "1.12.0",
+  "version": "1.13.0",
   "remotes": [
     {
       "type": "streamable-http",
@@ -31,10 +31,10 @@
       "llms_txt_url": "https://tradingstrategies.work/llms.txt",
       "api_manifest_url": "https://tradingstrategies.work/.well-known/api.json",
       "x402_manifest_url": "https://tradingstrategies.work/.well-known/x402",
-      "tool_count": 89,
+      "tool_count": 99,
       "free_tier_available": true,
       "categories": ["analytics", "research", "finance", "cryptocurrency", "trading"],
-      "summary": "89 MCP tools for quantitative crypto backtesting and Bitcoin market-regime analytics: look-ahead-aware backtest validation with Deflated-Sharpe-Ratio correction, point-in-time 9-indicator Bitcoin cycle scoring, macro-regime composites, Edge-Library filter effects, 62 on-chain series since 2009, altcoin screener and live subscriptions. Core outputs are not reproducible from public OHLCV/market-data APIs or web search. Delivers evidence, distributions and base rates — never buy/sell recommendations."
+      "summary": "99 MCP tools (49 listed by default, 50 more via arena_call_extended or /api/mcp?tools=full) for quantitative crypto backtesting and Bitcoin market-regime analytics: look-ahead-aware backtest validation with Deflated-Sharpe-Ratio correction, point-in-time 9-indicator Bitcoin cycle scoring, macro-regime composites, Edge-Library filter effects, 69 on-chain series since 2009, altcoin screener and live subscriptions. Core outputs are not reproducible from public OHLCV/market-data APIs or web search. Delivers evidence, distributions and base rates — never buy/sell recommendations."
     }
   }
 }
