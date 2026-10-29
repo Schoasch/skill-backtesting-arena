@@ -1,5 +1,7 @@
 # Backtesting Arena — Agent Skill
 
+[![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/schoasch/skill-backtesting-arena)
+
 **Battle-tested market intelligence for AI agents — every claim backtested,
 versioned, and explainable. Evidence and base rates, never financial advice.**
 
